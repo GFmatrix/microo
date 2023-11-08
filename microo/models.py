@@ -37,6 +37,9 @@ class Settings(models.Model):
   instagram_link = models.CharField(max_length=100)
   twitter_link = models.CharField(max_length=100)
 
+class Newsletter(models.Model):
+  email = models.EmailField()
+
 class ReqCallBack(forms.Form):
   name = forms.CharField(max_length=100)
   email = forms.EmailField()
