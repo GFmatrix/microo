@@ -28,6 +28,7 @@ class Comments(models.Model):
     return self.name
 
 class Settings(models.Model):
+  logo = models.ImageField(upload_to='settings')
   address = models.CharField(max_length=100)
   phone = models.CharField(max_length=100)
   email = models.EmailField()
